@@ -8,14 +8,8 @@ public class App {
 
         @Override
         public void run() {
-            for (int i = 0; i < 1000; i++) {
-                System.out.println("Watek 1 " + i);
-                try {
-                    Thread.sleep(50);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+            FileWriterSingleton fileWriterSingleton = FileWriterSingleton.getInstance();
+            System.out.println(fileWriterSingleton);
         }
     }
 
@@ -23,14 +17,8 @@ public class App {
 
         @Override
         public void run() {
-            for (int i = 0; i < 1000; i++) {
-                System.out.println("Watek 2 " + i);
-                try {
-                    Thread.sleep(50);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+            FileWriterSingleton fileWriterSingleton = FileWriterSingleton.getInstance();
+            System.out.println(fileWriterSingleton);
         }
     }
 
@@ -38,14 +26,8 @@ public class App {
 
         @Override
         public void run() {
-            for (int i = 0; i < 1000; i++) {
-                System.out.println("Watek 3 " + i);
-                try {
-                    Thread.sleep(50);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+            FileWriterSingleton fileWriterSingleton = FileWriterSingleton.getInstance();
+            System.out.println(fileWriterSingleton);
         }
     }
 
@@ -53,14 +35,8 @@ public class App {
 
         @Override
         public void run() {
-            for (int i = 0; i < 1000; i++) {
-                System.out.println("Watek 4 " + i);
-                try {
-                    Thread.sleep(50);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+            FileWriterSingleton fileWriterSingleton = FileWriterSingleton.getInstance();
+            System.out.println(fileWriterSingleton);
         }
     }
 
@@ -81,6 +57,10 @@ public class App {
         thread2.start();
         thread3.start();
         thread4.start();
+
+
+
+
     }
 }
 
